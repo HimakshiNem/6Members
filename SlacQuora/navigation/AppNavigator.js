@@ -8,22 +8,25 @@ import Verification from "../screens/authentication/Verification"
 import { Image, StyleSheet, Text, TouchableOpacity, View } from 'react-native';
 import { NavigationContainer } from '@react-navigation/native';
 import { createStackNavigator } from '@react-navigation/stack';
+import { JustMeAgainDownHere_400Regular } from '@expo-google-fonts/just-me-again-down-here';
 
 const Stack = createStackNavigator();
 
-// function LogoTitle() {
-//     return (
-//         <Image
-//             style={{ width: 50, height: 50 }}
-//             source={require('../assets/images/Whiteboard.PNG')}
-//         />
-//     );
-// }
+function LogoTitle() {
+    return (
+        <View style={styles.container}>
+            <Text style={styles.HeaderTitle}>Whiteboard</Text>
+        </View>
+    );
+}
 
 function AppNavigator() {
     return (
         <NavigationContainer>
-            <Stack.Navigator>
+            <Stack.Navigator 
+                  screenOptions={{
+                    headerTitle: props => <LogoTitle {...props} />
+                  }}>
                 <Stack.Screen name="Home" component={Home} />
                 <Stack.Screen name="SignIn" component={SignIn} />
                 <Stack.Screen name="SignUp" component={SignUp} />
@@ -33,6 +36,26 @@ function AppNavigator() {
         </NavigationContainer>
     )
 }
+
+const styles = StyleSheet.create({
+    container:{
+        alignItems: "center"
+    },
+    HeaderTitle: {
+      fontFamily: "JustMeAgainDownHere_400Regular",
+      fontSize: 30,
+      lineHeight:45,
+      color: "#FF9801",
+    },
+    bigBlue: {
+      color: 'blue',
+      fontWeight: 'bold',
+      fontSize: 30,
+    },
+    red: {
+      color: 'red',
+    },
+  });
 
 export default AppNavigator;
 
