@@ -1,7 +1,7 @@
 import React from 'react';
 import 'react-native-gesture-handler';
 import SignIn from "../screens/authentication/SignIn";
-import SignUp from "../screens/authentication/SingUp";
+import SignUp from "../screens/authentication/SignUp";
 import RestorePassword from "../screens/authentication/RestorePassword"
 import Home from "../screens/authentication/Home"
 import Verification from "../screens/authentication/Verification"
