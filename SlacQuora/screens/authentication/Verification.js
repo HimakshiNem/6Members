@@ -46,6 +46,10 @@ function Verification(props) {
                 </TouchableOpacity>
             </View>
 
+            <View style={styles.divider}>
+
+            </View>
+
             {/*Following view is for the verification button*/}
             <View style={styles.verificationBtnView}>
                 <TouchableOpacity
@@ -90,7 +94,8 @@ const styles = StyleSheet.create({
         height: 38,
         alignItems: "center",
         justifyContent: "center",
-        marginTop: 40,
+        marginTop: "10%",
+        marginBottom: "10%",
         backgroundColor: "#00A0FF",
       },
 
