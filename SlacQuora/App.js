@@ -5,8 +5,9 @@ import AppNavigator from  "./navigation/AppNavigator"
 import AppLoading from 'expo-app-loading';
 import {
   useFonts,
+  ComicNeue_400Regular,
   JustMeAgainDownHere_400Regular,
-} from '@expo-google-fonts/just-me-again-down-here';
+} from '@expo-google-fonts/dev';
 
 
 
@@ -17,6 +18,7 @@ import {
 
 export default function App() {
   let [fontsLoaded] = useFonts({
+    ComicNeue_400Regular,
     JustMeAgainDownHere_400Regular,
   });
 

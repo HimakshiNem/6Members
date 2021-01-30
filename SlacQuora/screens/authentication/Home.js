@@ -56,7 +56,7 @@ const styles = StyleSheet.create({
     },
 
     homeText: {
-        fontSize: 20,
+        fontSize: 30,
         fontFamily: "ComicNeue_400Regular",
     },
 
